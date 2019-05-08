@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+        .header {
+            display: flex;
+            margin: 0;
+            background-color: maroon;
+            height: 50px;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        .qwerty {
+            background-color: #cce6ff;
+
+        }
+        .header a {
+            padding-left: 50px;
+            color: aqua;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <div class="header">
+        <a href="#"><button>Home</button></a>
+        <a href="#"><button>Registration</button></a>
+        <a href="#"><button>About</button></a>
+        <a href="#"><button>Contacts</button></a>
+    </div>
+</head>
+
+<body>
+
+<div class="qwerty">
+<h1>Hello, Marlon</h1>
+<div class = "container">
+     <div class = "row">
+        <div class="col-lg-12">
+            <h2 class="title"> Client registration </h2>
+            {% csrf_token %}
+            <form action = "">
+              Name:    <input name ="name"> <br>
+              Country: <input name ="country"> <br>
+              Birth:   <input name ="birth"> <br>
+              ID Passport: <input name ="passport"> <br>
+              Date of issue: <input name ="issue"> <br>
+              Date of expiry: <input name ="expiry"> <br>
+              E-mail: <input name ="email"> <br>
+              Music:  <input name ="music"> <br>
+              File:   <input name ="File"> <br>
+               <div>
+                <input type="submit" value="Register" name="save">
+               </div>
+             </form>
+        </div>
+     </div>
+</div>
+</div>
+
+<h1> Rules of registration </h1>
+<ul>
+    <li><h3>Every fields has not to be empty</h3></li>
+    <li><h3>Email field is for sending out news about hotel</h3></li>
+    <li><h3>Music and file field can be chosen</h3></li>
+</ul>
+</body>
+
+</html>
